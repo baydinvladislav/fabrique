@@ -1,0 +1,16 @@
+{% extends 'polls/layout.html' %}
+
+{% block title %}Доступные опросы{% endblock %}
+
+{% block body %}
+<h1>Доступные опросы:</h1>
+{% if polls_list %}
+  <ul>
+  {% for poll in polls_list %}
+    <li><a href="{% url 'detail' poll.id %}">{{ poll.name }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+<p>На данный момент нет доступных опросов</p>
+{% endif %}
+{% endblock %}
