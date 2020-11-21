@@ -9,7 +9,7 @@ class PollListAPIView(ListAPIView):
     serializer_class = PollSerializer
     queryset = Poll.objects.all()
     filter_backends = [SearchFilter]
-    search_fields = ['start_date', 'expiration_date']
+    search_fields = ['expiration_date']
 
 
 class PollDetailAPIView(RetrieveAPIView):
