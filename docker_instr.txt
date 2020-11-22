@@ -1,0 +1,5 @@
+Для запуска приложения с помощью Docker, введите в терминале следующие команды:
+1) docker pull baydinvladislav/fabrique - скачиваем образ приложения с dockerhub;
+2) docker run --name project -p 8000:8000 baydinvladislav/fabrique - запускаем контейнер;
+
+3) перейдите в вашем веб-браузере по адресу: http://127.0.0.1:8000/
